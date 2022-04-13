@@ -1,0 +1,126 @@
+.choice-grid div img{
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+    width: 200px;
+    border: 1px;
+}
+
+.choice-grid{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.question-name {
+    align-items: center;
+    background-image: url('./images/background1.png');
+    display: flex;
+    height: 425px;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.question-name h1{
+    font-size: 2.4em;
+}
+
+[data-question-id="one"],
+[data-question-id="two"],
+[data-question-id="three"]{
+    display: flex;
+    box-sizing: border-box;
+    align-content: space-around;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    border: solid #dcdcdc 1px;
+    margin:auto 2px 20px 2px;
+    width: 32.5%;
+    padding: 10px;
+}
+
+.cambia{
+    background-color: #cfe3ff;
+}
+
+.opacita{
+    opacity: 0.6;
+}
+
+#buttid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+button{
+    background-color: #cecece;
+    height: 50px;
+    width: 100%;
+    border: solid rgb(168, 160, 160) 1px;
+    padding: 0px;
+    margin: 20px 0px 20px 0px;
+    
+}
+
+button:hover{
+    background-color: #e0e0e0;
+}
+
+#nas{
+    margin: 20px 20px 20px 20px;
+}
+
+.hidden{
+   display:none;
+}
+#titolo{
+    margin-top: 40px;
+}
+#personalita{
+    margin: 18px auto 18px auto;
+    text-align: justify;
+}
+
+@media screen {
+    @viewport{
+        zoom:100%;
+        width: auto; /*si adatta alla device-width che abbiamo specificato in html*/
+    }
+}
+
+@media (max-width: 700px){
+    body{
+        width: 95%;
+    }
+
+    header div span{
+        display:none;
+    }
+}
+
+@media (max-width: 500px){
+    .choice-grid div{
+        width: 49%;
+    }
+}
+
+#piedi{
+    display: flex;
+    background-color: rgba(163,145,183, 1);
+    position: relative;
+    justify-content: center;
+    z-index:99;
+    align-items: center;
+    font-family: 'Lato', arial;
+    margin-top:20px;
+  }
+  
+.foot{
+    text-align: center;
+    color:#ffffff;
+}
